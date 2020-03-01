@@ -34,7 +34,7 @@ function generateEmployees(data) {
         
             <div class="card" data-index="${index}">
                 <img class ="profilePicture" src="${picture}">
-                    <h3 class="employee_name">${firstName} ${lastName}</h3>
+                    <h3 class="employee_name">${firstName} ${lastName}</h3><br>
                     <p>${email}</p>
                     <p>${city}</p>
             </div>
