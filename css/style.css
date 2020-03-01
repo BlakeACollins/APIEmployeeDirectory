@@ -1,19 +1,23 @@
 *{
-    max-width: 100vw;
+    margin: 5px;
 }
 body{
     background-color: lightgray;
     margin: 10px;
 }
-h1{
-    text-align: center;
+.headerTitle{
+    text-align: left;
     font-family: 'Overpass', Arial, Helvetica, sans-serif;
     letter-spacing: 1px;
-    padding: 3px;
+    padding: 5px;
+    border-bottom: 2px solid darkblue;
 }
-hr{
-    margin: 25px;
-    border-top: 1px solid darkblue;
+.footerTitle{
+    text-align: left;
+    font-family: 'Overpass', Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    border-top: 2px solid darkblue;
+    margin-bottom: 0;
 }
 
 h4 {
@@ -22,96 +26,17 @@ h4 {
 }
 
 p {
-    color: #8e8e8e;
-    font-size: 16px;
+    color: black;
+    font-size: 1em;
     margin: 5px 0 0;
+    display: inline-flex;
 }
 
 .container {
-    margin: 25px;
+    margin: 10px;
 }
-
-.employee {
-    border: 1px solid lightgray;
-    border-radius: 5px;
-    background-color: #fff;
-    padding: 10px;
-}
-
-.employee:hover {
-    cursor: pointer;
-}
-
-.employees {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    grid-gap: 20px;
-}
-
-.image, .details {
-    float: left;
-}
-
-.image {
-    border-radius: 100%;
-    width: 100px;
-}
-
-.details {
-    margin-left: 20px;
-}
-
-.overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-.overlay-content {
-    width: 400px;
+.card{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid lightgray;
-    border-radius: 5px;
-    background-color: #fff;
-    color: #8e8e8e;
-    margin: 100px auto 0;
-    padding: 35px 35px 100px;
-}
 
-.overlay img {
-    width: 200px;
-}
-
-.overlay .details, .overlay .contact {
-    text-align: center;
-}
-
-.contact {
-    border-top: 1px solid lightgray;
-    margin-top: 30px;
-    padding-top: 20px;
-}
-
-.contact p {
-    margin-top: 20px;
-}
-
-.close {
-    width: 10px;
-    margin-left: auto;
-    color: black;
-}
-
-.close:hover {
-    cursor: pointer;
-    color: #8e8e8e;
 }
 
