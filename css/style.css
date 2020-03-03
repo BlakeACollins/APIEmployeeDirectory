@@ -28,15 +28,77 @@ h4 {
 p {
     color: black;
     font-size: 1em;
-    margin: 5px 0 0;
     display: inline-flex;
 }
 
 .container {
     margin: 10px;
 }
+
+.employeeGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
 .card{
     display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: lightgray;
+    align-content: center;
+
+}
+.card:hover{
+    cursor: pointer;
+    transition: ease-in-out 2s;
+
+}
+img{
+    border-radius: 50%;
+}
+
+/*Modal Box*/
+.modal-box {
+    position: absolute;
+    width: 375px;
+    height: 385px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: lightgray;
+    border-radius: 0.25em;
+    border: 2px solid darkblue; 
+}
+.modal-content{
+    margin: auto;
+    text-align: center;
+
+}
+.closeButton{
+    font-size: 2.2em;
+    font-weight: 600;
+    padding: 5px;
+}
+.closeButton:hover{
+    cursor: pointer;
 
 }
 
+@media (min-width: 768px){
+    .employeeGrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 10px;
+ }
+}
+
+@media(min-width: 1024px){
+    .employeeGrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
