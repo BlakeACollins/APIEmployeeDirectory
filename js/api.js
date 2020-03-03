@@ -34,7 +34,7 @@ function generateEmployees(data) {
         
             <div class="card" data-index="${index}">
                 <img class ="profilePicture" src="${picture}">
-                    <h3 class="employee_name">${firstName} ${lastName}</h3><br>
+                    <h3 class="employee_name">${firstName} ${lastName}</h3><br> 
                     <p>${email}</p>
                     <p>${city}</p>
             </div>
@@ -58,18 +58,19 @@ function generateModal(employee) {
         let dob = new Date(Date.parse(employee.dob.date)).toLocaleDateString(navigator.language);
         modalContainer.innerHTML = `
             <div class="modal-box">
-                <span class="close">&times;</span>
+                <span class="closeButton">&times;</span>
                 <div class="modal-info">
                     <div class="modal-content">
                         <image src="${employee.picture.large}" class="modal-picture">
                         <h2 class="employee_name">${employee.name.first} ${employee.name.last}</h2>
-                        <p>${employee.email}</p>
-                        <p>${employee.cell}</p>
-                        <p>${employee.location.street.number} 
-                            ${employee.location.street.name}<br>
-                            ${employee.location.city},<br>
-                            ${employee.location.state} 
-                            ${employee.location.postcode}</p>
+                        <p>${employee.email}</p><br>
+                        <p>${employee.location.state}</p>
+                        <hr>
+                        <p>${employee.cell}</p><br>
+                        <p>${employee.location.street.number}</p> 
+                        <p>${employee.location.street.name}</p>
+                        <p>${employee.location.city}</p>
+                        <p>${employee.location.postcode}</p>
                         <p>Birthday: ${dob}</p>
                     </div>
                 </div>
@@ -84,7 +85,7 @@ function generateModal(employee) {
 
 //Close modal window
 modalContainer.addEventListener('click', (e) => {
-    if (e.target.classList.contains('close') || e.target.classList.contains('modal-container')) {
+    if (e.target.classList.contains('closeButton') || e.target.classList.contains('modal-container')) {
         document.querySelector('.modal-box').innerHTML = "";
         modal.style.display = 'none';
     }
