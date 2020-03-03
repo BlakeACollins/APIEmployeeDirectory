@@ -34,9 +34,9 @@ function generateEmployees(data) {
         
             <div class="card" data-index="${index}">
                 <img class ="profilePicture" src="${picture}">
-                    <h3 class="employee_name">${firstName} ${lastName}</h3><br> 
-                    <p>${email}</p>
-                    <p>${city}</p>
+                   <p><h3 class="employeeFullName">${firstName} ${lastName}</h3><br> 
+                    ${email}
+                    ${city}</p>
             </div>
         `;
     });
@@ -62,7 +62,7 @@ function generateModal(employee) {
                 <div class="modal-info">
                     <div class="modal-content">
                         <image src="${employee.picture.large}" class="modal-picture">
-                        <h2 class="employee_name">${employee.name.first} ${employee.name.last}</h2>
+                        <h3 class="employeeFullName">${employee.name.first} ${employee.name.last}</h3>
                         <p>${employee.email}</p><br>
                         <p>${employee.location.state}</p>
                         <hr>
