@@ -19,10 +19,12 @@
 
 body{
     background-color: #f8f8ff;
-    margin: 10px;
+    margin: 5px;
 }
-.employeeFullName {
+ .employeeFullName{
     color: black;
+    font-weight: 300;
+    font-size: 1.25em;
 }
 
 p {
@@ -31,11 +33,23 @@ p {
     display: inline-flex;
 }
 img{
+    margin: 5px auto;
     border-radius: 50%;
 }
 
+ul{
+    list-style: none;
+    text-align: center;
+    margin-top: 30px;
+    margin-right: 10px;;
+}
+li{
+    font-size: .9em;
+    margin: 5px 0;
+}
+
 .container {
-    margin: 10px;
+    margin: 5px;
 }
 
 .employeeGrid{
@@ -46,12 +60,13 @@ img{
 .card{
     display: flex;
     flex-wrap: wrap;
-    padding: 10px;
+    padding: 5px;
     border: 2px solid darkgray;
-    border-radius: 10px;
+    border-radius: 15px;
     background-color: white;
     align-content: center;
-
+    justify-content: center;
+    
 }
 .card:hover{
     cursor: pointer;
