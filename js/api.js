@@ -34,9 +34,11 @@ function generateEmployees(data) {
         
             <div class="card" data-index="${index}">
                 <img class ="profilePicture" src="${picture}">
-                   <p><h3 class="employeeFullName">${firstName} ${lastName}</h3><br> 
-                    ${email}
-                    ${city}</p>
+                <ul>
+                    <li><h3 class="employeeFullName">${firstName} ${lastName}</h3></li>
+                        <li>${email}</li>
+                        <li>${city}</li>
+                    </ul>
             </div>
         `;
     });
