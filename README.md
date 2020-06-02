@@ -7,3 +7,5 @@ Awesome Startup is a distributed company with employees working all over the wor
 
 # Overall Comments
 "Fantastic job on this one! You have shown a deep understanding of pulling and parsing data from a 3rd party API and manipulating the HTML DOM using JavaScript! Keep up the good work and happy coding! You are in the final stretch!"
+
+Check it out! https://blakeacollins.github.io/APIEmployeeDirectory/
